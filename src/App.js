@@ -26,15 +26,26 @@ class App extends Component {
   componentWillMount(){
     console.log('will mount!');
   }
+  
+  state = {
+    greeting: 'hello'
+  }
 
   componentDidMount(){
-    console.log('did mount!')
+    setTimeout(() => {
+      this.setState({
+        greeting: 'asdfjasdfk;'
+      });
+    }, 5000)
+    
   }
+
   
   render() {
     console.log('did render!');
     return (
       <div className="App">
+        {this.state.greeting}
         <h3>hello</h3>
           {movies.map((movie, index) => {
           return  <Movie title = {movie.title} poster = {movie.poster} key = {index}/>
