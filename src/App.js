@@ -27,6 +27,7 @@ class App extends Component {
         key={movie.id} 
         genres={movie.genres} 
         synopsis = {movie.synopsis}/>
+        
     })
     return movies
   }
@@ -54,7 +55,7 @@ class App extends Component {
     return (
       <div className={movies ? "App" : "App--loading"}>
           {movies ? this._renderMovies() : 'Loading'}
-          <Props message = 'this is a component with props.'/>
+          
       </div>
     );
   }

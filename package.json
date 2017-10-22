@@ -17,7 +17,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://seulgiwendy.github.io/react-movie",
+  "homepage": "http://s3.ap-northeast-2.amazonaws.com/react-movie-webapp",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
